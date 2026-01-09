@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zetto - Bold Style Every Day</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap&family=Noto+Serif:ital,wght@0,100..900;1,100..900" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="page-container">
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="close-menu-btn" id="closeMenuBtn">
+            <i class="fas fa-times"></i>
+        </div>
+        <nav class="mobile-nav-links">
+            <a href="#shop" class="mobile-link">Shop</a>
+            <a href="#new" class="mobile-link">New Arrivals</a>
+            <a href="#sale" class="mobile-link">Sale</a>
+            <a href="#journal" class="mobile-link">Journal</a>
+        </nav>
+    </div>
+
+    <!-- Header / Nav -->
+    <header class="header">
+        <div class="logo">Zetto.</div>
+        <nav class="desktop-nav">
+            <a href="#shop" class="nav-link">Shop</a>
+            <a href="#new" class="nav-link">New Arrivals</a>
+            <a href="#sale" class="nav-link">Sale</a>
+            <a href="#journal" class="nav-link">Journal</a>
+        </nav>
+        <div class="header-icons">
+            <a href="#" class="icon-link"><i class="fas fa-search"></i></a>
+            <a href="#" class="icon-link cart-btn">Cart (<span id="cartCount">0</span>)</a>
+        </div>
+        <div class="mobile-menu-btn" id="openMenuBtn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content fade-in-up">
+            <h1>BOLD STYLE<br>EVERY DAY</h1>
+            <p>Discover aesthetic fits and quality fabrics designed for the modern individual.</p>
+            <a href="#shop" class="btn btn-dark ripple-btn">Shop Now</a>
+            <div class="sun-icon"><i class="fas fa-sun"></i></div>
+        </div>
+        <div class="hero-image-container fade-in-up delay-1">
+            <div class="hero-card">
+                <img src="images/hero.jpg" alt="Model in beige suit sitting on a stool">
+                <div class="hero-card-overlay">
+                    <span>New Season</span>
+                    <span>2024</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Pills -->
+    <section class="categories-bar fade-in-up delay-2" id="new">
+        <div class="cat-pill ripple-btn">
+            <span>View</span>
+        </div>
+        <div class="cat-pill active ripple-btn">
+            <span>Our</span>
+        </div>
+        <div class="cat-pill dark ripple-btn">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="cat-pill ripple-btn">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80&w=200" alt="">
+            <span>Collection</span>
+        </div>
+    </section>
+
+    <!-- Black Section (About) -->
+    <section class="about-section" id="journal">
+        <div class="about-images fade-in-left">
+            <div class="image-stack">
+                <img src="images/cover1.jpg" class="img-back" alt="">
+                <img src="images/cover2.jpg" class="img-front" alt="">
+            </div>
+        </div>
+        <div class="about-text fade-in-right">
+            <h2>About Zetto: Where Style and Story Intertwine</h2>
+            <p>We believe in fashion that speaks. Our collections are curated to bring out confidence and comfort in equal measure.</p>
+            <div class="circular-arrow ripple-btn">
+                <a class="arrow-down-btn" href="#shop"><i class="fas fa-arrow-down"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Products -->
+    <section class="products-section" id="shop">
+        <div class="section-header">
+            <h3>Latest Products</h3>
+            <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card fade-in-up">
+                <div class="prod-img">
+                    <img src="images/product1.jpg" alt="Man on a beige shirt and trousers holding a flower. ">
+
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="prod-info">
+                    <h4>Basic Beige Set</h4>
+                    <p>$120.00 <span class="old-price">$150.00</span></p>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card fade-in-up delay-1">
+                <div class="prod-img">
+                    <img src="images/product2.jpg" alt="Cream Hoodie">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="prod-info">
+                    <h4>Cream Hoodie</h4>
+                    <p>$95.00</p>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card fade-in-up delay-2">
+                <div class="prod-img">
+                    <img src="images/product3.jpg" alt="Woman in nice dark suit" style="object-position: bottom">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="prod-info">
+                    <h4>Dark Grey Women Suit</h4>
+                    <p>$110.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lookbook / Grid Section -->
+    <section class="lookbook-section">
+        <div class="section-header">
+            <h3>Find Your Perfect Look Today</h3>
+            <p class="subtitle">Exclusive items available for a limited time.</p>
+        </div>
+        <div class="lookbook-grid">
+            <div class="lb-item large fade-in-up">
+                <img src="images/lookbook1.jpg" style="object-position: center top" alt="">
+                <div class="lb-overlay">
+                    <span>Look Book</span>
+                </div>
+            </div>
+            <div class="lb-item fade-in-up delay-1">
+                <img src="images/lookbook2.jpg" style="object-position: center;" alt="">
+            </div>
+            <div class="lb-item fade-in-up delay-2">
+                <img src="images/lookbook3.jpg" style="object-position: center" alt="">
+            </div>
+            <div class="lb-item fade-in-up delay-3">
+                <img src="images/lookbook4.jpg" style="object-position: bottom" alt="">
+            </div>
+            <div class="lb-item fade-in-up delay-3">
+                <img src="images/lookbook5.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Weekend Theme (Brown Section) -->
+    <section class="theme-section" id="sale">
+        <div class="theme-content fade-in-up">
+            <span class="script-text">Life Style</span>
+            <h2>THIS<br>WEEKEND'S<br>THEME IS</h2>
+            <h3 class="theme-text"> Back to the <span class="theme-tag">90s</span><i class="fa-solid fa-arrow-right"></i></h3>
+        </div>
+        <div class="theme-image fade-in-right">
+            <img src="images/event.jpg" alt="Woman 90s attire">
+        </div>
+        
+    </section>
+
+    <!-- Bottom Features -->
+    <section class="features-section">
+        <div class="feature-text fade-in-left">
+            <h3>Helping You to Stay<br>With Modern Style</h3>
+            <p>Our fabrics are sourced with care to ensure sustainability and comfort.</p>
+            <a href="#" class="link-arrow">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="feature-images fade-in-right">
+            <div class="f-img-1">
+                <img src="images/showcase1.jpg" alt="Man in black shirt holding a grey suit" style="min-height: 400px">
+            </div>
+            <div class="f-img-2">
+                <img src="images/showcase2.jpg" style="min-height: 400px" alt="Woman in green cloak">
+            </div>
+        </div>
+    </section>
+</div>
+    <!-- Footer / Dark Section -->
+    <footer class="footer">
+    <div class="footer-grid">
+        <div class="footer-col">
+            <h4 class="footer-logo">Zetto.</h4>
+            <p class="footer-about">Crafting confidence through bold style and modern aesthetics. Quality fabrics for the modern individual.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4 class="footer-head">Shop</h4>
+            <a href="#new">New Arrivals</a>
+            <a href="#shop">Best Sellers</a>
+            <a href="#sale">Sale</a>
+        </div>
+
+        <div class="footer-col">
+            <h4 class="footer-head">Support</h4>
+            <a href="#">Shipping Policy</a>
+            <a href="#">Returns & Exchanges</a>
+            <a href="#">FAQs</a>
+        </div>
+
+        <div class="footer-col">
+            <h4 class="footer-head">Contact</h4>
+            <a href="#">Contact Us</a>
+            <a href="mailto:hello@zetto.com">hello@zetto.com</a>
+            <p>Lagos, Nigeria</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Zetto. All Rights Reserved.</p>
+    </div>
+</footer>
+    <div class="night-mode-toggle" id="nightModeBtn">
+      <i class="fas fa-moon"></i>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
